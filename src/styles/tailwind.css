@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.fade-animation {
+		@apply transition-all ease-in-out duration-300;
+	}
+	.filled-btn {
+		@apply bg-app-blue rounded-[20px] w-[200px] h-[60px] flex items-center justify-center text-white font-semibold fade-animation hover:scale-95 hover:bg-blue-700;
+	}
+	.border-btn {
+		@apply border border-app-blue bg-white rounded-[20px] w-[200px] h-[60px] flex items-center justify-center text-app-blue font-light hover:bg-blue-700 hover:border-none hover:text-white hover:font-semibold hover:scale-95 fade-animation;
+	}
+}
